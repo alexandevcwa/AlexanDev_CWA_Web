@@ -1,0 +1,19 @@
+.container__critica {
+  width: 100%;
+  padding: 4rem;
+  text-align: center;
+  color: white;
+  border-radius: 2rem;
+  border: 2px solid white;
+  background: linear-gradient(150deg, rgb(33, 36, 44), rgb(82, 62, 203));
+}
+
+.container__critica > h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.container__critica > p {
+  font-size: 1.6rem;
+  text-align: justify;
+}

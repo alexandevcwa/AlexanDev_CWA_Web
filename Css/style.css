@@ -1,0 +1,305 @@
+:root {
+  --font_special: "Bayon", sans-serif;
+}
+* {
+  border: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /*font-family: "Lexend", sans-serif;*/
+  font-family: "Poppins", sans-serif;
+}
+
+.container_iframe_ajax {
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
+
+body {
+  background: rgb(33, 37, 42);
+}
+
+.container__center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  max-width: 100rem;
+  width: 100%;
+}
+
+nav {
+  height: 8rem;
+  background-color: rgb(55, 59, 64);
+  padding: 0 1rem;
+}
+
+.container {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.container__logo {
+  height: inherit;
+  width: 8rem;
+  display: table;
+}
+
+.container__logo > figure {
+  height: inherit;
+  width: inherit;
+  padding: 1.2rem;
+}
+
+.container__logo > figure > img {
+  height: 100%;
+  width: 100%;
+}
+
+.container__marca {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 0.5rem;
+}
+
+.container__marca > h1 {
+  font-size: 2.4rem;
+}
+
+.container__links {
+  padding-right: 3rem;
+  height: inherit;
+  width: 100%;
+}
+
+.container__links ul {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.container__links ul li {
+  padding: 0 1rem;
+  overflow: hidden;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin: 0 1rem;
+}
+
+.container__links ul li:hover {
+  background-color: rgb(83, 173, 192);
+}
+
+.container__links ul li > a {
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.container__sites {
+  height: 5rem;
+  width: auto;
+  vertical-align: middle;
+  padding-right: 1rem;
+  display: flex;
+}
+
+.container__sites > a {
+  height: 5rem;
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  background-color: rgb(79, 88, 111);
+  border-radius: 1rem 1rem;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+}
+
+.container__sites > a:hover {
+  background-color: rgb(83, 173, 192);
+}
+
+.container__sites > a > figure {
+  height: 3.5rem;
+  width: 3.5rem;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+
+.container__sites > a > figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.container__sites > a > p {
+  color: white;
+  font-size: 1.4rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+main > .container-cards {
+  width: 100%;
+  height: 75vh;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: 13vh 13vh 13vh;
+  gap: 1rem;
+}
+
+.container-cards > .card {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.container-cards > .card:hover {
+  animation: zoom 2s;
+}
+
+.container-cards > .card--vitae {
+  grid-column: 1 / 1;
+  grid-row: 1 / 6;
+  background: linear-gradient(250deg, rgb(33, 37, 42), rgb(126, 150, 253));
+}
+
+.container-cards > .card--critica {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  background: linear-gradient(150deg, rgb(33, 36, 44), rgb(82, 62, 203));
+}
+
+.container-cards > .card--tema {
+  grid-column: 2 / 3;
+  grid-row: 3 / 6;
+  background: linear-gradient(180deg, rgb(33, 37, 42), rgb(61, 151, 206));
+}
+
+.container-cards > .card--spotify {
+  grid-column: 3 / 4;
+  grid-row: 3 / 6;
+  background-color: rgb(40, 40, 40);
+  border: 1px solid white;
+  border-image: linear-gradient(
+      to right,
+      rgb(33, 37, 42),
+      rgb(70, 70, 213),
+      rgb(141, 118, 248)
+    )
+    1;
+}
+
+.card__titulo {
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+.card__titulo > h2 {
+  color: rgb(226, 232, 240);
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.card p {
+  font-size: 1.6rem;
+  text-align: justify;
+  padding: 2rem;
+  color: white;
+}
+
+.card .card__link {
+  width: 100%;
+}
+
+.card .card__link > a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: right;
+  float: right;
+  padding-right: 2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  margin-left: 1rem;
+}
+
+/*Botones flotantes de whatsapp*/
+
+.container__support {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  height: 6.5rem;
+  width: 6.5rem;
+}
+
+.container__support > a {
+  height: inherit;
+  width: inherit;
+  overflow: hidden;
+}
+
+.container__support:hover {
+  animation: temblar 1s;
+}
+
+.container__support > a > figure {
+  height: inherit;
+  width: inherit;
+}
+
+.container__support > a > figure > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@keyframes temblar {
+  0% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(-6deg);
+  }
+}
